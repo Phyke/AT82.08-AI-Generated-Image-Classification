@@ -1,0 +1,44 @@
+[project]
+name = "at82-08-ai-generated-image-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "ipywidgets>=8.1.8",
+    "matplotlib>=3.10.7",
+    "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "scikit-image>=0.25.2",
+    "scikit-learn>=1.7.2",
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "tqdm>=4.67.1",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu129"
+url = "https://download.pytorch.org/whl/cu129"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu129", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+    { index = "pytorch-cu129", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[tool.ruff]
+select = ["ALL"]
+ignore = [
+    # "F401",
+    # "D",
+    # "T201",
+    # "PLR0913",
+    # "PLW2901",
+    # "PLR2004", # Too many nested blocks
+    "ERA001", # Found commented-out code
+    # "RET504", # Unnecessary assignment before return
+]
