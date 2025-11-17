@@ -9,9 +9,11 @@ dependencies = [
     "ipywidgets>=8.1.8",
     "matplotlib>=3.10.7",
     "numpy>=2.3.4",
+    "opencv-contrib-python>=4.11.0.86",
     "pandas>=2.3.3",
     "scikit-image>=0.25.2",
     "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
     "torch==2.8.0",
     "torchvision==0.23.0",
     "tqdm>=4.67.1",
@@ -35,10 +37,14 @@ select = ["ALL"]
 ignore = [
     # "F401",
     # "D",
-    # "T201",
+    "T201", # print found
     # "PLR0913",
     # "PLW2901",
-    # "PLR2004", # Too many nested blocks
-    "ERA001", # Found commented-out code
+    "PLR2004", # Magic value used in comparison, consider replacing `2` with a constant variable
+    "ERA001",  # Found commented-out code
     # "RET504", # Unnecessary assignment before return
+    "N806",    # Variable `X_tr` in function should be lowercase
+    "PLC0206",
+    "SIM118",
+    "N801",
 ]
