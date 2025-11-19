@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "ipykernel>=7.1.0",
     "ipywidgets>=8.1.8",
+    "lightgbm>=4.6.0",
     "matplotlib>=3.10.7",
     "numpy>=2.3.4",
     "opencv-contrib-python>=4.11.0.86",
@@ -35,8 +36,8 @@ torchvision = [
 [tool.ruff]
 select = ["ALL"]
 ignore = [
-    # "F401",
-    # "D",
+    "F401", # Imported but unused
+    "D",
     "T201", # print found
     # "PLR0913",
     # "PLW2901",
@@ -47,4 +48,6 @@ ignore = [
     "PLC0206",
     "SIM118",
     "N801",
+    "NPY002",  # Legacy numpy random
+    "N803",    # Argument name `X_train` should be lowercase
 ]

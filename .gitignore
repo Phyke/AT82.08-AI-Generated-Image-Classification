@@ -1,7 +1,7 @@
 data/train/
 data/test/
-/data/archive.zip
-
+data/archive.zip
+data/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

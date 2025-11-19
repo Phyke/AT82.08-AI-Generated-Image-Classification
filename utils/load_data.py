@@ -8,6 +8,7 @@ import numpy as np
 from numpy.typing import NDArray
 from PIL import Image
 from skimage import io
+from tqdm import tqdm
 
 
 def load_split(  # noqa: C901
@@ -44,7 +45,7 @@ def load_split(  # noqa: C901
             msg = f"Directory not found: {class_dir}"
             raise RuntimeError(msg)
 
-        for img_path in class_dir.glob("*.jpg"):
+        for img_path in tqdm(list(class_dir.glob("*.jpg")), desc=f"Loading {label_name} images"):
             img = loader(img_path)
 
             if img is None:
