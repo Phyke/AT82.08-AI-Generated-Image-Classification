@@ -1,6 +1,7 @@
 {
     "GaussianNB": {
-        "training_time": 0.009917020797729492,
+        "training_time": 0.010178089141845703,
+        "prediction_time": 0.0038552284240722656,
         "report": {
             "Real": {
                 "precision": 0.6130970724191063,
@@ -31,8 +32,9 @@
         "report_str": "              precision    recall  f1-score   support\n\n        Real     0.6131    0.7958    0.6926     10000\n        Fake     0.7091    0.4978    0.5850     10000\n\n    accuracy                         0.6468     20000\n   macro avg     0.6611    0.6468    0.6388     20000\nweighted avg     0.6611    0.6468    0.6388     20000\n",
         "model_size_mb": 0.0007953643798828125
     },
-    "KNN": {
-        "training_time": 0.11184811592102051,
+    "KNeighborsClassifier": {
+        "training_time": 0.10466742515563965,
+        "prediction_time": 1.210392951965332,
         "report": {
             "Real": {
                 "precision": 0.6717913788070449,
@@ -61,10 +63,11 @@
             }
         },
         "report_str": "              precision    recall  f1-score   support\n\n        Real     0.6718    0.6904    0.6810     10000\n        Fake     0.6816    0.6627    0.6720     10000\n\n    accuracy                         0.6765     20000\n   macro avg     0.6767    0.6765    0.6765     20000\nweighted avg     0.6767    0.6765    0.6765     20000\n",
-        "model_size_mb": 2.5779647827148438
+        "model_size_mb": 2.5779666900634766
     },
     "LogisticRegression": {
-        "training_time": 6.827889442443848,
+        "training_time": 8.225427150726318,
+        "prediction_time": 0.0014796257019042969,
         "report": {
             "Real": {
                 "precision": 0.6749303621169916,
@@ -95,8 +98,9 @@
         "report_str": "              precision    recall  f1-score   support\n\n        Real     0.6749    0.7269    0.7000     10000\n        Fake     0.7041    0.6499    0.6759     10000\n\n    accuracy                         0.6884     20000\n   macro avg     0.6895    0.6884    0.6879     20000\nweighted avg     0.6895    0.6884    0.6879     20000\n",
         "model_size_mb": 0.0007457733154296875
     },
-    "RandomForest": {
-        "training_time": 1.4145362377166748,
+    "RandomForestClassifier": {
+        "training_time": 1.3770148754119873,
+        "prediction_time": 0.04820442199707031,
         "report": {
             "Real": {
                 "precision": 0.7055341539039744,
@@ -128,7 +132,8 @@
         "model_size_mb": 25.193442344665527
     },
     "LGBMClassifier": {
-        "training_time": 0.16750001907348633,
+        "training_time": 0.15073251724243164,
+        "prediction_time": 0.011799812316894531,
         "report": {
             "Real": {
                 "precision": 0.7065924738281618,

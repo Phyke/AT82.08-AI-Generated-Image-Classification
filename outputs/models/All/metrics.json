@@ -1,0 +1,167 @@
+{
+    "GaussianNB": {
+        "training_time": 0.31090807914733887,
+        "prediction_time": 0.12645435333251953,
+        "report": {
+            "Real": {
+                "precision": 0.8159734565706838,
+                "recall": 0.6886,
+                "f1-score": 0.7468951678507512,
+                "support": 10000.0
+            },
+            "Fake": {
+                "precision": 0.7306461378773462,
+                "recall": 0.8447,
+                "f1-score": 0.7835443625063773,
+                "support": 10000.0
+            },
+            "accuracy": 0.76665,
+            "macro avg": {
+                "precision": 0.773309797224015,
+                "recall": 0.76665,
+                "f1-score": 0.7652197651785642,
+                "support": 20000.0
+            },
+            "weighted avg": {
+                "precision": 0.7733097972240149,
+                "recall": 0.76665,
+                "f1-score": 0.7652197651785642,
+                "support": 20000.0
+            }
+        },
+        "report_str": "              precision    recall  f1-score   support\n\n        Real     0.8160    0.6886    0.7469     10000\n        Fake     0.7306    0.8447    0.7835     10000\n\n    accuracy                         0.7667     20000\n   macro avg     0.7733    0.7667    0.7652     20000\nweighted avg     0.7733    0.7667    0.7652     20000\n",
+        "model_size_mb": 0.009387016296386719
+    },
+    "KNeighborsClassifier": {
+        "training_time": 0.11675906181335449,
+        "prediction_time": 6.042317628860474,
+        "report": {
+            "Real": {
+                "precision": 0.7562415328043353,
+                "recall": 0.7815,
+                "f1-score": 0.7686633225140159,
+                "support": 10000.0
+            },
+            "Fake": {
+                "precision": 0.7739499275812125,
+                "recall": 0.7481,
+                "f1-score": 0.7608054510322384,
+                "support": 10000.0
+            },
+            "accuracy": 0.7648,
+            "macro avg": {
+                "precision": 0.7650957301927739,
+                "recall": 0.7647999999999999,
+                "f1-score": 0.7647343867731271,
+                "support": 20000.0
+            },
+            "weighted avg": {
+                "precision": 0.765095730192774,
+                "recall": 0.7648,
+                "f1-score": 0.7647343867731271,
+                "support": 20000.0
+            }
+        },
+        "report_str": "              precision    recall  f1-score   support\n\n        Real     0.7562    0.7815    0.7687     10000\n        Fake     0.7739    0.7481    0.7608     10000\n\n    accuracy                         0.7648     20000\n   macro avg     0.7651    0.7648    0.7647     20000\nweighted avg     0.7651    0.7648    0.7647     20000\n",
+        "model_size_mb": 131.2676649093628
+    },
+    "LogisticRegression": {
+        "training_time": 10.052619934082031,
+        "prediction_time": 0.038442134857177734,
+        "report": {
+            "Real": {
+                "precision": 0.856333072713057,
+                "recall": 0.8762,
+                "f1-score": 0.8661526294978252,
+                "support": 10000.0
+            },
+            "Fake": {
+                "precision": 0.8732596232596233,
+                "recall": 0.853,
+                "f1-score": 0.8630109267503036,
+                "support": 10000.0
+            },
+            "accuracy": 0.8646,
+            "macro avg": {
+                "precision": 0.8647963479863401,
+                "recall": 0.8646,
+                "f1-score": 0.8645817781240643,
+                "support": 20000.0
+            },
+            "weighted avg": {
+                "precision": 0.8647963479863402,
+                "recall": 0.8646,
+                "f1-score": 0.8645817781240643,
+                "support": 20000.0
+            }
+        },
+        "report_str": "              precision    recall  f1-score   support\n\n        Real     0.8563    0.8762    0.8662     10000\n        Fake     0.8733    0.8530    0.8630     10000\n\n    accuracy                         0.8646     20000\n   macro avg     0.8648    0.8646    0.8646     20000\nweighted avg     0.8648    0.8646    0.8646     20000\n",
+        "model_size_mb": 0.005169868469238281
+    },
+    "RandomForestClassifier": {
+        "training_time": 18.369593143463135,
+        "prediction_time": 0.08489871025085449,
+        "report": {
+            "Real": {
+                "precision": 0.9124290974226291,
+                "recall": 0.9169,
+                "f1-score": 0.9146590852411591,
+                "support": 10000.0
+            },
+            "Fake": {
+                "precision": 0.9164908049442267,
+                "recall": 0.912,
+                "f1-score": 0.914239887724926,
+                "support": 10000.0
+            },
+            "accuracy": 0.91445,
+            "macro avg": {
+                "precision": 0.9144599511834279,
+                "recall": 0.91445,
+                "f1-score": 0.9144494864830426,
+                "support": 20000.0
+            },
+            "weighted avg": {
+                "precision": 0.9144599511834279,
+                "recall": 0.91445,
+                "f1-score": 0.9144494864830427,
+                "support": 20000.0
+            }
+        },
+        "report_str": "              precision    recall  f1-score   support\n\n        Real     0.9124    0.9169    0.9147     10000\n        Fake     0.9165    0.9120    0.9142     10000\n\n    accuracy                         0.9144     20000\n   macro avg     0.9145    0.9144    0.9144     20000\nweighted avg     0.9145    0.9144    0.9144     20000\n",
+        "model_size_mb": 13.777419090270996
+    },
+    "LGBMClassifier": {
+        "training_time": 4.186830997467041,
+        "prediction_time": 0.026900768280029297,
+        "report": {
+            "Real": {
+                "precision": 0.9341539077354148,
+                "recall": 0.9335,
+                "f1-score": 0.9338268393937879,
+                "support": 10000.0
+            },
+            "Fake": {
+                "precision": 0.9335465174377936,
+                "recall": 0.9342,
+                "f1-score": 0.9338731443994602,
+                "support": 10000.0
+            },
+            "accuracy": 0.93385,
+            "macro avg": {
+                "precision": 0.9338502125866042,
+                "recall": 0.9338500000000001,
+                "f1-score": 0.9338499918966241,
+                "support": 20000.0
+            },
+            "weighted avg": {
+                "precision": 0.9338502125866042,
+                "recall": 0.93385,
+                "f1-score": 0.9338499918966241,
+                "support": 20000.0
+            }
+        },
+        "report_str": "              precision    recall  f1-score   support\n\n        Real     0.9342    0.9335    0.9338     10000\n        Fake     0.9335    0.9342    0.9339     10000\n\n    accuracy                         0.9338     20000\n   macro avg     0.9339    0.9339    0.9338     20000\nweighted avg     0.9339    0.9338    0.9338     20000\n",
+        "model_size_mb": 0.1471700668334961
+    }
+}
